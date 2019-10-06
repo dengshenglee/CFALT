@@ -1,0 +1,16 @@
+///bad inputs are 
+///     numbers bigger than MAX_VALUE,
+///     illegal strings include bad escaped characters, unterminated strings or both of them 
+///     ,illegal identifier, 
+///     illegal symbols.
+## numbers bigger than MAX_VALUE
+2147483648
+## bad strings
+"unterminated
+"also unterminated \"
+"backslash followed by space: \ is not allowed"
+"bad escaped character: \a AND not terminated
+## illegal identifier
+123bool
+## illegal symbols
+$&^@`
