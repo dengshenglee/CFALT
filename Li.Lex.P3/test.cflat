@@ -1,0 +1,60 @@
+void hello() {}
+  
+struct a {
+   int x;
+};
+
+struct a test;
+
+int x;
+int y;
+bool b;
+void hello;
+
+void d() {
+   int tmp1;
+   int tmp2;
+   tmp1 = 3;
+   tmp2 = 2;
+   tmp1++;
+   tmp1--;
+   cin >> tmp2;
+   cout << tmp2;
+   if (x == 3) { z = 3; }
+# test the precedence
+   if (b == -1) { x = 4+3*5-y; while (c) { y = y*2+x; } } else { x = 0; }
+   while (c) { }
+   c();
+   return;
+}
+
+bool a( int num ) {
+  b = true; c = false;
+
+  //DotAccess
+  test.x = temp;
+
+  return true;
+}
+
+void c(int result, bool whether) {
+   int tmp1;
+   int tmp2;
+   tmp1 = 3;
+   tmp2 = 2;
+   result = -result;
+   result = !tmp1;
+   result = tmp1 + tmp2;
+   result = tmp1 - tmp2;
+   result = tmp1 * tmp2;
+   result = tmp1 / tmp2;
+   result = tmp1 && tmp2; 
+   result = tmp1 || tmp2;
+   result = tmp1 == tmp2;
+   result = tmp1 != tmp2;
+   result = tmp1 < tmp2;
+   result = tmp1 > tmp2;
+   result = tmp1 <= tmp2;
+   result = tmp1 >= tmp2;
+}
+
