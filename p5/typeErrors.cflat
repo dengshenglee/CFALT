@@ -1,0 +1,83 @@
+int f(){return 0;}
+void f_a(){ cout<<f;} //Attempt to write a function
+struct P{
+    int x;
+    int y;
+    };
+struct Q{
+    bool x;
+    bool y;
+    };
+void f_b(){ cout<<P;} // Attempt to write a struct name
+struct P p;
+struct Q q;
+void f_c(){ cout<<p;} // Attempt to write a struct variable
+void f_d(){}
+void f_f(int i){}
+void f_c(){ cout<<f_d();} //Attempt to write void
+void f_e(){
+    cin>>f_d; // Attempt to read a function
+    cin>>P; //Attempt to read a struct name
+    cin>>p; // Attempt to read a struct variable
+    p(); // Attempt to call a non-function
+    f_d(1); // Function call with wrong number of args
+    f_f(true);// Type of actual does not match type of formal
+
+}
+int f_g(){return;}//Missing return value
+void f_h(){return 0;} //Return with a value in a void function
+int f_i(){return true;}//Bad return value
+void f_j(){
+    int a;
+    bool b;
+    bool i;
+    a = a+i;//Arithmetic operator applied to non-numeric operand
+    a = a-i;//Arithmetic operator applied to non-numeric operand
+    a = a*i; //Arithmetic operator applied to non-numeric operand
+    a = a/i; //Arithmetic operator applied to non-numeric operand
+    i++;//Arithmetic operator applied to non-numeric operand
+    i--;//Arithmetic operator applied to non-numeric operand
+    i = b>i;//Relational operator applied to non-numeric operand
+    i = b<i;//Relational operator applied to non-numeric operand
+    i = a>=i;//Relational operator applied to non-numeric operand
+    i= a<=i;//Relational operator applied to non-numeric operand
+    i = !a;//Logical operator applied to non-bool operand
+    i = a&&b;//Logical operator applied to non-bool operand
+    i = a||b;//Logical operator applied to non-bool operand
+    if(a){} //Non-bool expression used as an if condition
+    while(a){}//	Non-bool expression used as a while condition
+    repeat(b){}//	Non-integer expression used as a repeat clause
+
+    }
+
+void f_x() {
+    int i;
+    bool b;
+    i = b;               // Type mismatch
+    b = b == i;          // Type mismatch
+    b = P;               // Type mismatch
+    b = b == P;          // Type mismatch
+    b = p;               // Type mismatch
+    b = b == p;          // Type mismatch
+
+}
+
+void f_y() {
+    bool b;
+    b = f_x() == f_d();     // Equality operator applied to void functions
+    b = f_x() != f_d(); //Equality operator applied to void functions
+    b = f_x == f_d; //Equality operator applied to functions
+    b = f_x != f_d; //Equality operator applied to functions
+    b = P == Q; //Equality operator applied to struct names
+    b = P != Q; //Equality operator applied to struct names
+    b = p == q; //Equality operator applied to struct variables
+    b = p != q;// Equality operator applied to struct variables
+}
+
+
+void f_z() {
+    f_b = f_c;  // Function assignment
+    P = P;      // Struct name assignment
+    p = p;      // Struct variable assignment
+}
+
